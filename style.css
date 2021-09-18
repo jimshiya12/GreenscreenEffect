@@ -1,0 +1,52 @@
+        body {
+            background: rgb(235, 226, 226);
+            color: #cccccc;
+        }
+        
+        video {
+            align-items: center;
+            justify-content: center;
+            display: flexbox;
+        }
+        
+        #c2 {
+            background-image: url(foo.png);
+            background-repeat: no-repeat;
+        }
+        
+        div {
+            float: left;
+            border: 1px solid #444444;
+            padding: 10px;
+            margin: 10px;
+            background: #fffefe;
+        }
+        
+        .row {
+            display: -webkit-flex;
+            display: flex;
+        }
+        
+        #c2 {
+            background-image: url(download\ \(1\).jpg);
+            background-repeat: no-repeat;
+            background-size: 800px, 450px;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            body {
+                width: 100%;
+            }
+            .row {
+                -webkit-flex-direction: column;
+                flex-direction: column;
+                width: 100%;
+                height: auto;
+            }
+            #c1 {
+                width: 600px;
+            }
+            #c2 {
+                width: 600px;
+            }
+        }
